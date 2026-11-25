@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-label="WhatsApp Audio Stickers: turn any video, image or GIF into an animated sticker with sound">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062c26"/>
+      <stop offset=".55" stop-color="#075e54"/>
+      <stop offset="1" stop-color="#0a8f73"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1fd17a"/>
+      <stop offset="1" stop-color="#047a63"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".78" cy=".5" r=".5">
+      <stop offset="0" stop-color="#25d366" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#25d366" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#00140f" flood-opacity=".45"/>
+    </filter>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#ffffff" fill-opacity=".06"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="420" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="420" rx="28" fill="url(#dots)"/>
+  <rect width="1280" height="420" rx="28" fill="url(#glow)"/>
+
+  <!-- Background waveform -->
+  <g stroke="#ffffff" stroke-opacity=".07" stroke-width="10" stroke-linecap="round" transform="translate(600 -10)">
+    <path d="M60 330v20M90 315v50M120 300v80M150 322v36M180 290v100M210 310v60M240 325v30M270 305v70M300 295v90M330 318v44M360 328v24"/>
+  </g>
+
+  <!-- Logo -->
+  <g transform="translate(72 70)">
+    <rect width="112" height="112" rx="28" fill="url(#tile)"/>
+    <g transform="rotate(-9 56 56)" filter="url(#sh)">
+      <rect x="22" y="22" width="68" height="68" rx="20" fill="#fff"/>
+    </g>
+    <g transform="rotate(-9 56 56)" stroke="#05987a" stroke-width="8" stroke-linecap="round">
+      <path d="M39 50v12M51 41v30M63 46v20M75 52v8"/>
+    </g>
+    <path d="M94 6l3 7.7 7.7 3-7.7 3-3 7.7-3-7.7-7.7-3 7.7-3z" fill="#fff"/>
+  </g>
+
+  <!-- Title -->
+  <text x="72" y="248" fill="#ffffff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="-1">WhatsApp Audio Stickers</text>
+  <text x="74" y="294" fill="#d7f5ea" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="24">Turn any video, image or GIF into an animated sticker that talks.</text>
+
+  <!-- Chips -->
+  <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">
+    <g transform="translate(74 322)">
+      <rect width="160" height="38" rx="19" fill="#ffffff" fill-opacity=".14" stroke="#ffffff" stroke-opacity=".25"/>
+      <text x="80" y="25" text-anchor="middle">العربية + English</text>
+    </g>
+    <g transform="translate(246 322)">
+      <rect width="196" height="38" rx="19" fill="#ffffff" fill-opacity=".14" stroke="#ffffff" stroke-opacity=".25"/>
+      <text x="98" y="25" text-anchor="middle">100% in your browser</text>
+    </g>
+    <g transform="translate(454 322)">
+      <rect width="148" height="38" rx="19" fill="#25d366"/>
+      <text x="74" y="25" text-anchor="middle" fill="#05392f">One click send</text>
+    </g>
+  </g>
+
+  <!-- Sticker card on the right, with a live waveform -->
+  <g transform="translate(860 62)">
+    <g filter="url(#sh)">
+      <rect x="0" y="0" width="330" height="296" rx="26" fill="#ffffff"/>
+    </g>
+    <!-- checkerboard = transparent sticker area -->
+    <defs>
+      <pattern id="chk" width="20" height="20" patternUnits="userSpaceOnUse">
+        <rect width="20" height="20" fill="#f1f4f5"/>
+        <rect width="10" height="10" fill="#e3e8ea"/>
+        <rect x="10" y="10" width="10" height="10" fill="#e3e8ea"/>
+      </pattern>
+    </defs>
+    <rect x="22" y="22" width="286" height="170" rx="18" fill="url(#chk)"/>
+    <!-- the sticker itself: tilted tile that bobs -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="1.6s" repeatCount="indefinite"/>
+      <g transform="rotate(-8 165 107)">
+        <rect x="105" y="47" width="120" height="120" rx="32" fill="url(#tile)"/>
+        <g stroke="#ffffff" stroke-width="11" stroke-linecap="round">
+          <path d="M135 97v20">
+            <animate attributeName="d" values="M135 97v20;M135 82v50;M135 97v20" dur=".9s" repeatCount="indefinite"/>
+          </path>
+          <path d="M155 77v60">
+            <animate attributeName="d" values="M155 77v60;M155 92v30;M155 77v60" dur=".8s" repeatCount="indefinite"/>
+          </path>
+          <path d="M175 90v34">
+            <animate attributeName="d" values="M175 90v34;M175 72v70;M175 90v34" dur="1s" repeatCount="indefinite"/>
+          </path>
+          <path d="M195 100v14">
+            <animate attributeName="d" values="M195 100v14;M195 88v38;M195 100v14" dur=".7s" repeatCount="indefinite"/>
+          </path>
+        </g>
+      </g>
+    </g>
+    <!-- player row -->
+    <circle cx="48" cy="242" r="24" fill="#00a884"/>
+    <path d="M41 230v24l20-12z" fill="#fff"/>
+    <g stroke="#00a884" stroke-width="5" stroke-linecap="round">
+      <path d="M88 236v12M102 228v28M116 232v20M130 224v36M144 230v24M158 236v12M172 228v28M186 233v18M200 238v8"/>
+    </g>
+    <g stroke="#cfd8dc" stroke-width="5" stroke-linecap="round">
+      <path d="M214 232v20M228 236v12M242 230v24M256 236v12M270 238v8M284 234v16"/>
+    </g>
+    <text x="304" y="282" text-anchor="end" fill="#8696a0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15">0:04 · 814 KB</text>
+  </g>
+</svg>
