@@ -9,6 +9,7 @@
 <br>
 
 [![Chrome extension](https://img.shields.io/badge/Chrome-Extension_(MV3)-00a884?style=for-the-badge&logo=googlechrome&logoColor=white)](#install-in-60-seconds)
+[![Firefox add-on](https://img.shields.io/badge/Firefox-Add--on-ff7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](#firefox)
 [![Arabic and English](https://img.shields.io/badge/Arabic_%2B_English-RTL_ready-075e54?style=for-the-badge&logo=googletranslate&logoColor=white)](#arabic-and-english)
 [![Privacy](https://img.shields.io/badge/Privacy-100%25_in_your_browser-25d366?style=for-the-badge)](#privacy)
 [![GitHub stars](https://img.shields.io/github/stars/KaraBala10/whatsapp-audio-stickers?style=for-the-badge&color=f5b301&logo=github)](https://github.com/KaraBala10/whatsapp-audio-stickers/stargazers)
@@ -108,7 +109,7 @@ Every conversion runs in your browser. No server, no account, no tracking.
 - **Full Arabic support (العربية):** every label, message and error is translated, and the layout flips to right-to-left.
 - The switch at the top of the panel (**ع | EN**) changes the language instantly. Your choice is remembered.
 - On first launch, the panel follows your browser's language.
-- The extension's name in Chrome also appears in Arabic or English, following Chrome's language.
+- The extension's name in your browser also appears in Arabic or English, following the browser's language.
 
 ## Install in 60 seconds
 
@@ -120,6 +121,18 @@ Every conversion runs in your browser. No server, no account, no tracking.
 
 > [!TIP]
 > Pin the extension (puzzle icon → pin) so the button is always one click away.
+
+### Firefox
+
+Needs Firefox 140 or newer.
+
+1. Download this repository as above.
+2. Open `about:debugging#/runtime/this-firefox` in Firefox.
+3. Click **Load Temporary Add-on…** and choose the `manifest.json` file inside the folder.
+4. Open [web.whatsapp.com](https://web.whatsapp.com), then click the extension icon in the toolbar.
+
+> [!NOTE]
+> Firefox removes temporary add-ons when it closes, so you need to load it again after restarting Firefox.
 
 ## How it works
 
@@ -179,7 +192,7 @@ Open the chat you want to send to, then press <b>Send</b> again. Or choose <b>Sa
 <details>
 <summary><b>The panel doesn't open.</b></summary>
 <br>
-Reload the WhatsApp Web page (F5). After updating the extension, always press its reload button in <code>chrome://extensions</code> and then reload WhatsApp Web.
+Reload the WhatsApp Web page (F5). After updating the extension, always press its reload button in <code>chrome://extensions</code> (or <code>about:debugging</code> in Firefox) and then reload WhatsApp Web.
 </details>
 
 <details>
@@ -191,7 +204,7 @@ At the bottom of the panel click <b>Save</b> to save the log as a file, then <a 
 <details>
 <summary><b>Which browsers are supported?</b></summary>
 <br>
-Up-to-date Chrome, Edge, Brave and other Chromium browsers. Firefox and Safari are not supported (the extension needs WebCodecs and Chrome's extension APIs).
+Up-to-date Chrome, Edge, Brave and other Chromium browsers, and Firefox 140 or newer. Safari is not supported.
 </details>
 
 ## Project structure

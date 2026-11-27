@@ -88,10 +88,10 @@
   };
 
   // Errores globales: se registran si vienen de la extensión o si hay una operación en curso.
-  const EXT_MARK = "chrome-extension://";
+  const EXT_MARKS = ["chrome-extension://", "moz-extension://"];
   window.addEventListener("error", (ev) => {
     const stack = (ev.error && ev.error.stack) || "";
-    const fromExt = (ev.filename || "").startsWith(EXT_MARK) || stack.includes(EXT_MARK);
+    const fromExt = EXT_MARKS.some((m) => (ev.filename || "").startsWith(m) || stack.includes(m));
     if (!fromExt && !WAAS.activeRun) return;
     log("error", fromExt ? "error-global-extension" : "error-global-pagina", {
       message: ev.message, file: ev.filename, line: ev.lineno, col: ev.colno, error: ev.error,
@@ -100,7 +100,7 @@
   window.addEventListener("unhandledrejection", (ev) => {
     const r = ev.reason;
     const stack = (r && r.stack) || "";
-    const fromExt = stack.includes(EXT_MARK);
+    const fromExt = EXT_MARKS.some((m) => stack.includes(m));
     if (!fromExt && !WAAS.activeRun) return;
     log("error", fromExt ? "promesa-rechazada-extension" : "promesa-rechazada-pagina", { reason: r });
   });

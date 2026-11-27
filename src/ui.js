@@ -108,7 +108,7 @@
     [/No se pudo leer el audio/, "لم نستطع قراءة الصوت.", "Couldn't read the sound."],
     [/El audio dura/, "بداية الصوت بعد نهاية الملف.", "The sound starts after the file ends."],
     [/no pudo leer la imagen|no puede leer imágenes/, "لم نستطع قراءة الصورة. جرّب PNG أو JPG.", "Couldn't read the image. Try PNG or JPG."],
-    [/ImageDecoder|WebCodecs|generar WebP|codificar Opus|requestVideoFrameCallback/, "متصفحك لا يدعم هذا. حدّث Chrome أو Edge.", "Your browser can't do this. Update Chrome or Edge."],
+    [/ImageDecoder|WebCodecs|generar WebP|codificar Opus|requestVideoFrameCallback/, "متصفحك لا يدعم هذا. حدّث Chrome أو Edge أو Firefox.", "Your browser can't do this. Update Chrome, Edge or Firefox."],
     [/Tiempo agotado|se detuvo|no entregó cuadros/, "انتهت المهلة. حاول مرة أخرى.", "Timed out. Try again."],
     [/duración del audio cambió|Primero calcula/, "تغيّر شيء. اضغط «اصنع الملصق» مرة أخرى.", "Something changed. Press Create sticker again."],
     [/WhatsApp no (pudo|considera)|estado de error/, "واتساب رفض الإرسال. حاول بعد قليل.", "WhatsApp refused to send. Try again shortly."],
